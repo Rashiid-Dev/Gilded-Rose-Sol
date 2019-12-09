@@ -1,5 +1,5 @@
 
-# Gilded-Rose-Sol (pre-refactoring)
+# Gilded-Rose-Sol (Refactored)
 > This will explain the steps I took to solve this Kata
 
 ## Why does this code need to be changed?
