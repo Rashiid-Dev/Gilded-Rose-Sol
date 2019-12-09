@@ -6,18 +6,18 @@ from gilded_rose import *
 if __name__ == "__main__":
     print("OMGHAI!")
     items = [
-        Item(name="+5 Dexterity Vest", sell_in=10, quality=20),
-        Item(name="Aged Brie", sell_in=2, quality=0),
-        Item(name="Elixir of the Mongoose", sell_in=5, quality=7),
-        Item(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
-        Item(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
-        Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
-        Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
-        Item(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
-        Item(name="Conjured Mana Cake", sell_in=3, quality=6),  # <-- :O
+        Generic_depriciate(name="+5 Dexterity Vest", sell_in=10, quality=20),
+        Cheese_appriciate(name="Aged Brie", sell_in=2, quality=0),
+        Generic_depriciate(name="Elixir of the Mongoose", sell_in=5, quality=7),
+        Fixed(name="Sulfuras, Hand of Ragnaros", sell_in=0, quality=80),
+        Fixed(name="Sulfuras, Hand of Ragnaros", sell_in=-1, quality=80),
+        Pass_appriciate(name="Backstage passes to a TAFKAL80ETC concert", sell_in=15, quality=20),
+        Pass_appriciate(name="Backstage passes to a TAFKAL80ETC concert", sell_in=10, quality=49),
+        Pass_appriciate(name="Backstage passes to a TAFKAL80ETC concert", sell_in=5, quality=49),
+        Generic_depriciate(name="Conjured Mana Cake", sell_in=3, quality=6, degrading_value=2),  # <-- :O
     ]
 
-    days = 2
+    days = 30
     import sys
     if len(sys.argv) > 1:
         days = int(sys.argv[1]) + 1
